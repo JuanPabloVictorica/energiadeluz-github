@@ -237,7 +237,7 @@ nav a:hover{
 img{
     width: 100%;
     height: 50vh;
-    
+    border-radius: 5px;
 }
 
 .row{
@@ -252,6 +252,11 @@ img{
 
 }
 
+.column img:hover{
+     transform: scale(1.1);  
+     z-index: 2; 
+     transition: 1s;
+}
 
 
 
