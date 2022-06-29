@@ -76,6 +76,19 @@ nav a:hover{
     color: #0c423e;
 }
 
+footer .texto{
+    background-color: rgb(250, 241, 221); 
+    
+}  
+
+footer .redes{     
+    background-color: rgb(170, 230, 250);  
+    display: flex;    
+    flex-direction: column;   
+    justify-content: center;   
+    align-items: center; 
+}
+
 @media (max-width:700px){
     header{
         flex-direction: column;
@@ -125,105 +138,57 @@ nav a:hover{
 
 /* servicios */
 
-.servicios{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contenedor-servicios{
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    width: auto;
-    margin: 50px;
-    gap: 100px;
-    
+    margin: 150px;
 }
 
-.servicios-uno{
-    display: grid;
-    grid-template-rows: repeat(3, 130px);
-    
-}
-
-.servicios-uno h1{
-    text-decoration: none;
-    font-size: 50px;
-    color: #0c423e;
-    font-family: 'Nunito', sans-serif;
-}
-.servicios-uno p{
+.texto{
     text-decoration: none;
     font-size: 25px;
     color: #0c423e;
     font-family: 'Nunito', sans-serif;
+    padding-right: 80px;
 }
 
-.servicios-dos{
-    height: auto;
-    width: auto;
-}
+
 
 @media (max-width:700px){
-
-.servicios{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: auto;
-    margin: 50px;
-    gap: 90px;
     
-}
-
-.servicios-uno h1{
-    
-    font-size: 20px;
-}
-    
-.servicios-uno p{
-    
-    font-size: 15px;
-}
-
-.servicios-uno{
-    display: grid;
-    grid-template-rows: repeat(3, 150px);
-}
-
-
-
+    .contenedor-servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-servicios img{
+        width: 500px;
+        height: 300px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+    .contenedor-servicios img{
+        padding-top: 80px;
+    }
 }
 
 @media (max-width:1000px){
-
-    .servicios{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
+    .contenedor-servicios img{
+        width: 500px;
         height: 300px;
-        width: auto;
-        margin: 50px;
-        gap: 90px;
-        
     }
-    
-    .servicios-uno h1{
-
+    .texto p{
+        text-decoration: none;
         font-size: 20px;
     }
-        
-    .servicios-uno p{
-        
-        font-size: 15px;
-    }
-    
-    .servicios-uno{
-        display: grid;
-        grid-template-rows: repeat(3, 150px);
-    }
-    
-    }
+}
+
 
 /* fin servicios */
 
@@ -278,31 +243,16 @@ img{
 
 /* sobre mi */
 
-.sobremi{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+
+.contenedor-sobremi{
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    width: auto;
-    margin: 50px;
-    gap: 200px;
-    
+    margin: 150px;
 }
 
-.sobremi-uno{
-    display: grid;
-    grid-template-rows: repeat(3, 130px);
-    
-}
-
-.sobremi-uno h1{
-    text-decoration: none;
-    font-size: 50px;
-    color: #0c423e;
-    font-family: 'Nunito', sans-serif;
-}
-.sobremi-uno p{
+.texto{
     text-decoration: none;
     font-size: 25px;
     color: #0c423e;
@@ -310,46 +260,6 @@ img{
 }
 
 
-.sobremi-dos{
-    width: 90%;
-    height: 75%;
-}
-
-
-
-
-
-
-
-
-/*
-.sobremi{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 800px;
-    width: 60%;
-    margin: 50px;
-}
-
-.sobremi h1{
-    text-decoration: none;
-    font-size: 50px;
-    color: #0F544E;
-    font-family: 'Nunito', sans-serif;
-}
-
-.sobremi p{
-    text-decoration: none;
-    font-size: 25px;
-    color: #0F544E;
-    font-family: 'Nunito', sans-serif;
-}
-
-.img-sobremi{
-    height: 450px;
-    width: 550px;
-} */
 
 /* fin sobre mi */
 
