@@ -153,7 +153,27 @@ footer .redes{
     padding-right: 80px;
 }
 
+@media (max-width:1000px){
 
+    .contenedor-servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-servicios img{
+        width: 700px;
+        height: 500px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .contenedor-servicios img{
+        padding-top: 80px;
+    }
+}
 
 @media (max-width:700px){
     
@@ -165,8 +185,8 @@ footer .redes{
         flex-direction: column;
     }
     .contenedor-servicios img{
-        width: 500px;
-        height: 300px;
+        width: 600px;
+        height: 400px;
     }
     .texto p{
         text-decoration: none;
@@ -178,16 +198,7 @@ footer .redes{
     }
 }
 
-@media (max-width:1000px){
-    .contenedor-servicios img{
-        width: 500px;
-        height: 300px;
-    }
-    .texto p{
-        text-decoration: none;
-        font-size: 20px;
-    }
-}
+
 
 
 /* fin servicios */
@@ -225,16 +236,21 @@ img{
 
 
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .column{
         flex: 50%;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .column{
         flex: 100%;
      }
+     img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 5px;
+    }
 }
 
 
@@ -257,6 +273,51 @@ img{
     font-size: 25px;
     color: #0c423e;
     font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width:1000px){
+
+    .contenedor-sobremi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-sobremi img{
+        width: 700px;
+        height: 500px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .contenedor-sobremi img{
+        padding-top: 80px;
+    }
+}
+
+@media (max-width:700px){
+    
+    .contenedor-sobremi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-sobremi img{
+        width: 600px;
+        height: 400px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+    .contenedor-sobremi img{
+        padding-top: 80px;
+    }
 }
 
 
