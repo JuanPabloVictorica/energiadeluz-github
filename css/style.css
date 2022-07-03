@@ -89,45 +89,6 @@ footer .redes{
     align-items: center; 
 }
 
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-        font-size: 14px;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
-
-    .index{
-        background-image: url(../multimedia/imagenes/home.jpg);   
-        background-repeat: no-repeat;
-        background-size: cover; 
-        background-position: center center;
-    }
-    
-}
-
-@media (max-width:1000px){
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
-
-    .index{
-        background-image: url(../multimedia/imagenes/home.jpg);   
-        background-repeat: no-repeat;
-        background-size: cover; 
-        background-position: center center;
-    }
-
-}
-
-
-
 /* fin inicio */
 
 
@@ -152,54 +113,6 @@ footer .redes{
     font-family: 'Nunito', sans-serif;
     padding-right: 80px;
 }
-
-@media (max-width:1000px){
-
-    .contenedor-servicios{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 80px;
-        flex-direction: column;
-    }
-    .contenedor-servicios img{
-        width: 700px;
-        height: 500px;
-    }
-    .texto p{
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .contenedor-servicios img{
-        padding-top: 80px;
-    }
-}
-
-@media (max-width:700px){
-    
-    .contenedor-servicios{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 80px;
-        flex-direction: column;
-    }
-    .contenedor-servicios img{
-        width: 600px;
-        height: 400px;
-    }
-    .texto p{
-        text-decoration: none;
-        font-size: 20px;
-        
-    }
-    .contenedor-servicios img{
-        padding-top: 80px;
-    }
-}
-
-
-
 
 /* fin servicios */
 
@@ -234,26 +147,6 @@ img{
      transition: 1s;
 }
 
-
-
-@media (max-width: 1000px){
-    .column{
-        flex: 50%;
-    }
-}
-
-@media (max-width: 700px){
-    .column{
-        flex: 100%;
-     }
-     img{
-        width: 100%;
-        height: 50vh;
-        border-radius: 5px;
-    }
-}
-
-
 /* fin galeria */
 
 
@@ -275,7 +168,68 @@ img{
     font-family: 'Nunito', sans-serif;
 }
 
+
+/* fin sobre mi */
+
+/* contacto */
+
+
+   
+/* fin contacto */
+
+
 @media (max-width:1000px){
+    /*inicio*/
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .index{
+        background-image: url(../multimedia/imagenes/home.jpg);   
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center;
+    }        
+
+    /*fin inicio*/
+
+    /*servicios*/
+
+    .contenedor-servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-servicios img{
+        width: 750px;
+        height: 600px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .contenedor-servicios img{
+        padding-top: 80px;
+    }
+
+    /*fin servicios*/
+
+    /*galeria*/
+
+    .column{
+        flex: 50%;
+    }
+
+    /*fin galeria*/
+
+    /*sobre mi*/
 
     .contenedor-sobremi{
         display: flex;
@@ -285,8 +239,8 @@ img{
         flex-direction: column;
     }
     .contenedor-sobremi img{
-        width: 700px;
-        height: 500px;
+        width: 820px;
+        height: 600px;
     }
     .texto p{
         text-decoration: none;
@@ -295,10 +249,77 @@ img{
     .contenedor-sobremi img{
         padding-top: 80px;
     }
+
+    /*fin sobre mi*/
+
+    /*contacto*/
+
+
+
+    /*fin contacto*/
 }
 
+
 @media (max-width:700px){
-    
+    /*inicio*/
+
+    header{
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .index{
+        background-image: url(../multimedia/imagenes/home.jpg);   
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center;
+    }
+
+    /*fin inicio*/
+
+    /*servicios*/
+
+    .contenedor-servicios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        flex-direction: column;
+    }
+    .contenedor-servicios img{
+        width: 550px;
+        height: 400px;
+    }
+    .texto p{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+    .contenedor-servicios img{
+        padding-top: 80px;
+    }
+
+    /*fin servicios*/
+
+    /*galeria*/
+
+    .column{
+        flex: 100%;
+     }
+     img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 5px;
+    }
+
+    /*fin galeria*/
+
+    /*sobre mi*/
+
     .contenedor-sobremi{
         display: flex;
         justify-content: center;
@@ -307,7 +328,7 @@ img{
         flex-direction: column;
     }
     .contenedor-sobremi img{
-        width: 600px;
+        width: 550px;
         height: 400px;
     }
     .texto p{
@@ -317,15 +338,13 @@ img{
     }
     .contenedor-sobremi img{
         padding-top: 80px;
-    }
+    }    
+
+    /*fin sobre mi*/
+
+    /*contacto*/
+
+
+
+    /*fin contacto*/
 }
-
-
-
-/* fin sobre mi */
-
-/* contacto */
-
-
-   
-/* fin contacto */
