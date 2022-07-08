@@ -10,38 +10,41 @@ header{
     .logo{
         display: flex;
         align-items: center;
-
+    
         .logo img{
             height: 50px;
             width: 50px;
             margin-right: 10px;
-
+        
             .logo-nombre{
                 font-family: $main-fonts;
                 color: $main-color-fuente;
-
+            
                 a{
                     text-decoration: none;
                     color: $main-color-fuente;
-
+                
                     nav a{
                         font-weight: 600;
                         padding-right: 10px;
                         margin-left: 20px;
+                    
+                        nav a{
 
-                        nav a:hover{
-                            color: white;
-                            transition: 0.5s;
+                            &:hover{
+                                color: white;
+                                transition: 0.5s;
+                            }
                         }
                     }
-                    
                 }
-                
             }
-            
         }
+
     }
+
 }
+
 
 
 
