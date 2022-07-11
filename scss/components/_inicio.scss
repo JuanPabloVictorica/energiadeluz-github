@@ -18,11 +18,11 @@ header{
         
             .logo-nombre{
                 font-family: $main-fonts;
-                color: $main-color-fuente;
+                color: #0c423e;
             
                 a{
                     text-decoration: none;
-                    color: $main-color-fuente;
+                    color: #0c423e;
                 
                     nav a{
                         font-weight: 600;
@@ -68,7 +68,7 @@ header{
     flex-direction: column;
     font-size: 35px;
     font-family: $main-fonts;
-    color: $main-color-fuente;
+    color: #0c423e;
 }
 
 footer .texto{

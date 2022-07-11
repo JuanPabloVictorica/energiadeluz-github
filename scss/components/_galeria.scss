@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.galeria{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+
+}
+
+.column img:hover{
+     transform: scale(1.1);  
+     z-index: 2; 
+     transition: 1s;
+}

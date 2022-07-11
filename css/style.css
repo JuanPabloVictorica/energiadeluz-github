@@ -1,17 +1,259 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 7 | @import '/base/variables';
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 7:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @import '/base/variables';\d\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 7:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #64c7bf;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo .logo img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+header .logo .logo img .logo-nombre {
+  font-family: "Nunito", sans-serif;
+  color: #0c423e;
+}
+header .logo .logo img .logo-nombre a {
+  text-decoration: none;
+  color: #0c423e;
+}
+header .logo .logo img .logo-nombre a nav a {
+  font-weight: 600;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+header .logo .logo img .logo-nombre a nav a nav a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.index {
+  background-image: url(../multimedia/imagenes/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo {
+  background-color: #d1fffb;
+}
+
+.principal {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  color: #0c423e;
+}
+
+footer .texto {
+  background-color: rgb(250, 241, 221);
+}
+
+footer .redes {
+  background-color: rgb(170, 230, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+.texto-servicios {
+  text-decoration: none;
+  font-size: 25px;
+  color: #0c423e;
+  font-family: "Nunito", sans-serif;
+  padding-right: 80px;
+}
+
+img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.galeria {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 1s;
+}
+
+.contenedor-sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+.texto-sobremi {
+  text-decoration: none;
+  font-size: 25px;
+  color: #0c423e;
+  font-family: "Nunito", sans-serif;
+  padding-right: 80px;
+}
+
+@media (max-width: 1000px) {
+  /*inicio*/
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+  .index {
+    background-image: url(../multimedia/imagenes/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  /*fin inicio*/
+  /*servicios*/
+  .contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    flex-direction: column;
+  }
+  .contenedor-servicios img {
+    width: 750px;
+    height: 600px;
+    padding-top: 80px;
+  }
+  .texto-servicios p {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  /*fin servicios*/
+  /*galeria*/
+  .column {
+    flex: 50%;
+  }
+  /*fin galeria*/
+  /*sobre mi*/
+  .contenedor-sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    flex-direction: column;
+  }
+  .contenedor-sobremi img {
+    width: 820px;
+    height: 600px;
+    padding-top: 80px;
+  }
+  .texto-sobremi p {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  /*fin sobre mi*/
+  /*contacto*/
+  /*fin contacto*/
+}
+@media (max-width: 700px) {
+  /*inicio*/
+  header {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+  .index {
+    background-image: url(../multimedia/imagenes/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  /*fin inicio*/
+  /*servicios*/
+  .contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    flex-direction: column;
+  }
+  .contenedor-servicios img {
+    width: 550px;
+    height: 400px;
+  }
+  .texto-servicios p {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .contenedor-servicios img {
+    padding-top: 80px;
+  }
+  /*fin servicios*/
+  /*galeria*/
+  .column {
+    flex: 100%;
+  }
+  img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+  }
+  /*fin galeria*/
+  /*sobre mi*/
+  .contenedor-sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    flex-direction: column;
+  }
+  .contenedor-sobremi img {
+    width: 550px;
+    height: 400px;
+  }
+  .texto-sobremi p {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .contenedor-sobremi img {
+    padding-top: 80px;
+  }
+  /*fin sobre mi*/
+  /*contacto*/
+  /*fin contacto*/
+}
+
+/*# sourceMappingURL=style.css.map */
