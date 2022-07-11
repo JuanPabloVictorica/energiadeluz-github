@@ -18,25 +18,23 @@ header .logo {
   display: flex;
   align-items: center;
 }
-header .logo .logo img {
+header .logo img {
   height: 50px;
   width: 50px;
   margin-right: 10px;
 }
-header .logo .logo img .logo-nombre {
+header .logo .logo-nombre {
   font-family: "Nunito", sans-serif;
   color: #0c423e;
 }
-header .logo .logo img .logo-nombre a {
-  text-decoration: none;
-  color: #0c423e;
-}
-header .logo .logo img .logo-nombre a nav a {
+header nav a {
   font-weight: 600;
   padding-right: 10px;
   margin-left: 20px;
+  text-decoration: none;
+  color: #0c423e;
 }
-header .logo .logo img .logo-nombre a nav a nav a:hover {
+header nav a:hover {
   color: white;
   transition: 0.5s;
 }

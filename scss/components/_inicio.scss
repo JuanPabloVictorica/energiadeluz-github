@@ -6,41 +6,34 @@ header{
     align-items: center;
     padding: 10px;
     font-family: $main-fonts;
-
+    
     .logo{
         display: flex;
         align-items: center;
     
-        .logo img{
+        img{
             height: 50px;
             width: 50px;
             margin-right: 10px;
-        
-            .logo-nombre{
+        }    
+
+        .logo-nombre{
                 font-family: $main-fonts;
                 color: #0c423e;
-            
-                a{
-                    text-decoration: none;
-                    color: #0c423e;
-                
-                    nav a{
-                        font-weight: 600;
-                        padding-right: 10px;
-                        margin-left: 20px;
-                    
-                        nav a{
-
-                            &:hover{
-                                color: white;
-                                transition: 0.5s;
-                            }
-                        }
-                    }
-                }
-            }
         }
-
+    }
+    nav {
+       a {
+            font-weight: 600;
+            padding-right: 10px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #0c423e;
+            &:hover{
+            color: white;
+            transition: 0.5s;
+            }
+        } 
     }
 
 }
