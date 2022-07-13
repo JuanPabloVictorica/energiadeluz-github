@@ -1,0 +1,7 @@
+@mixin servicios-sobremi($display, $center, $align, $margin) {
+    display: $display;
+    justify-content: $center;
+    align-items: $align;
+    margin: $margin;
+}
+    

@@ -1,14 +1,13 @@
 .contenedor-servicios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px;
+    @include servicios-sobremi(flex, center, center, 150px);
+
+    .texto-servicios { 
+        text-decoration: map-get($texto-srvcs-sbrm, text-decoration);
+        font-size: map-get($texto-srvcs-sbrm, font-size);
+        color: map-get($texto-srvcs-sbrm,  color);
+        font-family: map-get($texto-srvcs-sbrm, font-family);
+        padding-right: map-get($texto-srvcs-sbrm, padding-right);
+    }
+    
 }
 
-.texto-servicios{
-    text-decoration: none;
-    font-size: 25px;
-    color: #0c423e;
-    font-family: 'Nunito', sans-serif;
-    padding-right: 80px;
-}
