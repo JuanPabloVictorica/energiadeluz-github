@@ -1,8 +1,8 @@
-.contenedor-sobremi{
+/*.contenedor-sobremi{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px;
+    margin: 205px;
 
 
     .texto-sobremi{
@@ -13,5 +13,30 @@
         padding-right: 80px;
     }
     
+    .img-sobremi{
+        width: 800px;
+        height: 400px;
+    }
 }
 
+*/
+
+.contenedor-sobremi{
+    @include servicios-sobremi(flex, center, center, 240px);
+
+    .texto-sobremi { 
+        text-decoration: map-get($texto-srvcs-sbrm, text-decoration);
+        font-size: map-get($texto-srvcs-sbrm, font-size);
+        color: map-get($texto-srvcs-sbrm,  color);
+        font-family: map-get($texto-srvcs-sbrm, font-family);
+        padding-right: map-get($texto-srvcs-sbrm, padding-right);
+    }
+    
+}
+
+.img-sobremi{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 12px black;
+}

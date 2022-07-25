@@ -15,11 +15,13 @@ header{
             height: 50px;
             width: 50px;
             margin-right: 10px;
+            margin-bottom: 10px;
         }    
 
         .logo-nombre{
                 font-family: $main-fonts;
                 color: #0c423e;
+                margin-top: 15px;
         }
     }
     nav {
@@ -61,18 +63,8 @@ header{
     flex-direction: column;
     font-size: 35px;
     font-family: $main-fonts;
+    font-weight: bolder;
     color: #0c423e;
+    margin: 55px;
 }
 
-footer .texto{
-    background-color: rgb(250, 241, 221); 
-    
-}  
-
-footer .redes{     
-    background-color: rgb(170, 230, 250);  
-    display: flex;    
-    flex-direction: column;   
-    justify-content: center;   
-    align-items: center; 
-}

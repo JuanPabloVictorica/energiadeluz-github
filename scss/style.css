@@ -172,8 +172,6 @@ img {
 }
 
 .img-sobremi {
-  width: 600px;
-  height: 400px;
   border-radius: 10px;
   box-shadow: 5px 8px 12px black;
 }
@@ -206,7 +204,7 @@ img {
     height: 600px;
   }
   .contenedor-servicios .texto-servicios {
-    padding-right: 0;
+    padding-right: 0px;
   }
   .texto-servicios p {
     text-decoration: none;
