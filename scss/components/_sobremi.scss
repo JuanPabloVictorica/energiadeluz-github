@@ -1,26 +1,3 @@
-/*.contenedor-sobremi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 205px;
-
-
-    .texto-sobremi{
-        text-decoration: none;
-        font-size: 25px;
-        color: #0c423e;
-        font-family: 'Nunito', sans-serif;
-        padding-right: 80px;
-    }
-    
-    .img-sobremi{
-        width: 800px;
-        height: 400px;
-    }
-}
-
-*/
-
 .contenedor-sobremi{
     @include servicios-sobremi(flex, center, center, 240px);
 

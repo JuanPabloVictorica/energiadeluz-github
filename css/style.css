@@ -328,9 +328,10 @@ img {
   }
   nav {
     padding: 10px 0px;
+    font-size: 5px;
   }
   .principal {
-    font-size: 20px;
+    font-size: 10px;
   }
   .index {
     background-image: url(../multimedia/imagenes/home.jpg);
